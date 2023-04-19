@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-#from rest_framework import permissions
+# from rest_framework import permissions
 
 from .models import Project, Task, Team, User
 from .serializers import (
@@ -38,4 +38,4 @@ class TeamViewSet(viewsets.ModelViewSet):
     serializer_class = TeamSerializer
     filterset_fields = ['id', 'name']
     permission_classes = []
-    #permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
